@@ -2,6 +2,7 @@
 #define __MAZE_H__
 
 #include "misc.h"
+#include "cell.h"
 
 /*
 *Structures et fonctions relatives a la construction du labyrinthe

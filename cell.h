@@ -5,16 +5,25 @@
 *Structures et fonctions relatives a la construction des cases
 */
 
-typedef struct	s_cell	t_cell;
+typedef enum{
+  WALL,
+  TILE,
+  PATH,
+  IN,
+  OUT
+} ctype;
+
+typedef struct			s_cell
 {
 	int				x;
 	int				y;
 	int				nbmoves;
-	struct	s_cell	*parent;
-	struct	s_cell	*left;
-	struct	s_cell	*right;
-	struct	s_cell	*up;
-	struct	s_cell	*bottom;
-}				t_cell;
+	ctype			type;
+	struct s_cell	*parent;
+	struct s_cell	*left;
+	struct s_cell	*right;
+	struct s_cell	*up;
+	struct s_cell	*bottom;
+}						t_cell;
 
 #endif
