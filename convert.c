@@ -54,4 +54,5 @@ char	ft_char_from_cell(t_maze *maze, ctype type)
 		return maze->in;
 	if (type == OUT)
 		return maze->out;
+	return 0;
 }
