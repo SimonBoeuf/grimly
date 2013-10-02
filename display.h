@@ -4,7 +4,9 @@
 #include "convert.h"
 
 /*
-*Structures et fonctions relatives a l'affichage du labyrinthe
+***************************************************************
+*Structures et fonctions relatives a l'affichage du labyrinthe*
+***************************************************************
 */
 
 void	ft_display_maze(t_maze *maze);

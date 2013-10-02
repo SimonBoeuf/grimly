@@ -1,10 +1,9 @@
-#ifndef __CONVERT_H__
-#define __CONVERT_H__
-
-#include "maze.h"
+#include "includes.h"
 
 /*
-* Structures et fonctions relatives a la conversion du labyrinthe en graphe
+*****************************************************************
+*Structures et fonctions relatives aux conversions du labyrinthe*
+*****************************************************************
 */
 
 /*
@@ -13,18 +12,16 @@
 t_maze	*ft_maze_from_file(int fd);
 
 /*
-* Renvoie une map a afficher a partir du maze passe en parametre
+* Construit un graphe a partir du maze passe en parametre
 */
-char	**map_from_maze(t_maze *maze);
+t_graph	*ft_graph_from_maze(t_maze *maze);
 
 /*
-* Renvoie la prochaine cellule du labyrinthe a afficher
+* Renvoie une maze a afficher en fonction du graphe passe en parametre
 */
-t_cell	*ft_next_cell(t_maze *maze);
+t_maze	*maze_from_graph(t_maze *maze, t_graph *graph);
 
 /*
-* Renvoie le caractere correspondant a la cellule
+* Renvoie toutes les cellules du path
 */
-char	ft_char_from_cell(t_maze *maze, ctype type);
-
-#endif
+t_cell	**ft_get_path(t_graph *graph);

@@ -1,8 +1,9 @@
-#ifndef __CELL_H__
-#define __CELL_H__
+#include "includes.h"
 
 /*
-*Structures et fonctions relatives a la construction des cases
+***************************************************************
+*Structures et fonctions relatives a la construction des cases*
+***************************************************************
 */
 
 typedef enum{
@@ -15,15 +16,7 @@ typedef enum{
 
 typedef struct			s_cell
 {
-	int				x;
-	int				y;
-	int				nbmoves;
-	ctype			type;
-	struct s_cell	*parent;
-	struct s_cell	*left;
-	struct s_cell	*right;
-	struct s_cell	*up;
-	struct s_cell	*bottom;
+	int		num;
+	int		dist;
+	t_path	**paths;
 }						t_cell;
-
-#endif

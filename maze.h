@@ -1,11 +1,9 @@
-#ifndef __MAZE_H__
-#define __MAZE_H__
-
-#include "misc.h"
-#include "cell.h"
+#include "includes.h"
 
 /*
-*Structures et fonctions relatives a la construction du labyrinthe
+*******************************************************************
+*Structures et fonctions relatives a la construction du labyrinthe*
+*******************************************************************
 */
 
 typedef struct	s_maze
@@ -17,7 +15,5 @@ typedef struct	s_maze
 	char	path;
 	char	in;
 	char	out;
-	t_cell *cells;
+	char	**map;
 }				t_maze;
-
-#endif

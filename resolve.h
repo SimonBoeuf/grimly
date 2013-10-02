@@ -2,7 +2,9 @@
 #define __RESOLVE_H__
 
 /*
-*Structures et fonctions relatives a la resolution du chemin
+*************************************************************
+*Structures et fonctions relatives a la resolution du chemin*
+*************************************************************
 */
 
 #endif

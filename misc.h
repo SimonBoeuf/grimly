@@ -5,7 +5,9 @@
 #include "unistd.h"
 
 /*
-*Fonctions diverses
+********************
+*Fonctions diverses*
+********************
 */
 
 void	ft_putchar(char c)

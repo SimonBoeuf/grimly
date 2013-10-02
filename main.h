@@ -2,7 +2,9 @@
 #define __MAIN_H__
 
 /*
-*Main
+******
+*Main*
+******
 */
 
 #endif
