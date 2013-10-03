@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fonction.get.entry.h                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lfouquet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/10/02 12:21:13 by lfouquet          #+#    #+#             */
-/*   Updated: 2013/10/03 18:35:02 by lfouquet         ###   ########.fr       */
+/*   Created: 2013/10/03 18:25:14 by lfouquet          #+#    #+#             */
+/*   Updated: 2013/10/03 18:30:25 by lfouquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes.h"
+#ifndef __CHAR_H__
+#define __CHAR_H__
 
-int     main(int argc, char **argv)
-{
-	char **result;
-	argv++;
-	result = ft_get_all_labs_by_param(argv, argc - 1);
-	//result = ft_get_by_read(result, 0);
-	//ft_putstr(result);
-    return (0);
-}
+#include <fcntl.h>
+
+/*
+** Taille du buffer qd on utilise read
+*/
+#define BUFF 6
+
+char	*ft_get_stdin(char *result);
+char	*ft_get_lab_by_param(char *str);
+char	**ft_get_all_labs_by_param(char **param, int count_param);
+char	*ft_get_by_read(char *result, int source);
+#endif

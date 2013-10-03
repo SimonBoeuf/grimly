@@ -11,5 +11,9 @@
 #include "convert.h"
 #include "display.h"
 #include "resolve.h"
+#include "fonction.put.h"
+#include "fonction.char.h"
+#include "fonction.diverse.h"
+#include "fonction.get.entry.h"
 
 #endif

@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fonction.put.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lfouquet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/10/02 12:21:13 by lfouquet          #+#    #+#             */
-/*   Updated: 2013/10/03 18:35:02 by lfouquet         ###   ########.fr       */
+/*   Created: 2013/10/03 11:33:43 by lfouquet          #+#    #+#             */
+/*   Updated: 2013/10/03 18:27:16 by lfouquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes.h"
 
-int     main(int argc, char **argv)
+void	ft_putchar(char c)
 {
-	char **result;
-	argv++;
-	result = ft_get_all_labs_by_param(argv, argc - 1);
-	//result = ft_get_by_read(result, 0);
-	//ft_putstr(result);
-    return (0);
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *str)
+{
+	int		i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
 }
