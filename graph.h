@@ -12,3 +12,8 @@ typedef struct	s_graph
 	t_cell	**cells;
 	t_cell	*in;
 }				t_graph;
+
+/*
+* Initialise un nouveau graphe
+*/
+t_graph	*ft_init_graph();

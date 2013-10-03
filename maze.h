@@ -17,3 +17,10 @@ typedef struct	s_maze
 	char	out;
 	char	**map;
 }				t_maze;
+
+/*
+* Retourne une cellule representant l'entree du labyrinthe
+*/
+t_cell	*ft_find_in(t_maze	*maze);
+int		ft_get_nb_paths(t_maze *maze, t_cell *cell);
+
