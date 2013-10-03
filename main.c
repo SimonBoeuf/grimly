@@ -14,9 +14,12 @@
 
 int     main(int argc, char **argv)
 {
+	argc = argc;
 	char **result;
+	result = argv;
+	result = result;
 	argv++;
-	result = ft_get_all_labs_by_param(argv, argc - 1);
+	//result = ft_get_all_labs_by_param(argv, argc - 1);
 	//result = ft_get_by_read(result, 0);
 	//ft_putstr(result);
     return (0);
