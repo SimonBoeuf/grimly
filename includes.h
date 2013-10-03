@@ -11,6 +11,8 @@
 #include <unistd.h>
 
 #include "types.h"
+#include "queue.h"
+#include "elm.h"
 #include "path.h"
 #include "cell.h"
 #include "maze.h"
